@@ -1,0 +1,19 @@
+{
+    "retries": 0,
+    "ignoreTestFiles": "*.js",
+    "testFiles": ["**/*.{feature,features}"],
+    "projectId": "k5gn7g",
+    "video": false,
+    "videosFolder": "cypress/videos",
+    "downloadsFolder": "cypress/download",
+    "trashAssetsBeforeRuns": true,
+    "videoCompression": 32,
+    "env": {
+        "TAGS": "not @ignore",
+        "allure": true
+       
+    },
+    "baseUrl": "https://www.vr.com.br/",
+    "requestTimeout": 50000,
+    "defaultCommandTimeout": 30000
+  }
