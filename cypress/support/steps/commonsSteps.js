@@ -1,18 +1,14 @@
-import { Given, And, Then, When } from "cypress-cucumber-preprocessor/steps";
-import BasePage from "../pageobjects/basePage";
+import { Given, And} from "cypress-cucumber-preprocessor/steps";
 
-const basePage = new BasePage
 
-And('clico no botão {string}', botao => {
-    basePage.clickOnButton(botao);
-})
 
 And('clico no link {string}', text => {
-    basePage.clickOnLink(text);
+    cy.get('a').contains(text).screenshot(`Clicou no botão ${text}`);
+    cy.get('a').contains(text).click();
 })
 
-And('aguardo {int} segundos', time => {
-    basePage.wait((time)*1000);
+And('aguarda a resposta da api {string} apelidada como {string}', (api, alias) => {
+    cy.interceptRequest(api, alias)
 })
 
 And('o elemento {string} deve estar presente', el => {

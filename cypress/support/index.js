@@ -15,7 +15,6 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
-import LoginPage from './pageobjects/loginPage'
 import deepEqualInAnyOrder from 'deep-equal-in-any-order'
 require('cypress-xpath')
 require('@shelex/cypress-allure-plugin')
@@ -24,7 +23,6 @@ require('cypress-get-table')
 
 chai.use(deepEqualInAnyOrder)
 
-const login = new LoginPage;
 
 afterEach(() => {
     cy.task('log', window.testState !== undefined ? `Nome do cenário: ${window.testState.currentScenario.name}` : 'Operação inicial')
