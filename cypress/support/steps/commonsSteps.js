@@ -1,4 +1,4 @@
-import { Given, And} from "cypress-cucumber-preprocessor/steps";
+import { Given, And } from "cypress-cucumber-preprocessor/steps";
 
 
 
@@ -13,6 +13,11 @@ And('aguarda a resposta da api {string} apelidada como {string}', (api, alias) =
 
 And('o elemento {string} deve estar presente', el => {
     cy.get(el).screenshot("Elemento esta presente")
+})
+
+
+And('o botão de rede credenciada deve estar presente', el => {
+    cy.get("#rede-credenciada").screenshot("Elemento esta presente")
 })
 
 Given('que acesso o site', () => {
