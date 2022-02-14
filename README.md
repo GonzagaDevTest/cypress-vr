@@ -25,8 +25,6 @@ O projeto utiliza o padrão Page Objects, desta forma o projeto tem a seguinte e
 * plugin/index.js: este arquivo é destinado para configuração de plugins. É utilizado para configurar o Cucumber, por exemplo.
 * support: nessa pasta ficam os steps, os scripts e o mapeamento de elementos dos testes.
     * steps: passos que farão a conexão entre o BDD e os scripts Cypress.
-    * pageobjects: nesta pasta ficam os arquivos .js com os scripts Cypress.
-    * elements: arquivos que contém os elementos da página. Tal organização permite que elementos sejam reutilizados e tenham fácil manutenção.
 * node_modules: dependências do projeto, não devem ser mexidos.
 * cypress.json: arquivo que contém as configurações globais do projeto. Ex.: variáveis globais, resolução do navegador, URL padrão, entre outros.
 
