@@ -44,9 +44,6 @@ Caso ocorra erro na instalação do Cypress por conta de incompatibilidade com a
 - Em seguida execute o comando no terminal ```npm cypress install```;
 - Após finalizar execute o comando ```npx cypress open```.
 
-## Execução em ambiente Docker
-
-* docker-compose up --exit-code-from cypress
 ### > Documentação Oficial Cypress e Outros Links Úteis
 
 * https://docs.cypress.io/ - Documentação Cypress
